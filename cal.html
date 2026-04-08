@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="first.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="first.css">
+        <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -24,28 +25,28 @@
         
         
         
-        <div class="display">0</div>
+        <div class="display" id="display"></div>
         <div class="buttons">
-            <button class="st3">AC</button>
-            <button class="st3">DEL</button>
-            <button class="st3">()</button>
-            <button class="op">÷</button>
-            <button class="num">7</button>
-            <button class="num">8</button>
-            <button class="num">9</button>
-            <button class="op">x</button>
-            <button class="num">4</button>
-            <button class="num">5</button>
-            <button class="num">6</button>
-            <button class="op">-</button>
-            <button class="num">1</button>
-            <button class="num">2</button>
-            <button class="num">3</button>
-            <button class="op">+</button>
-            <button class="num">%</button>
-            <button class="num">0</button>
-            <button class="num">.</button>
-            <button class="isequal">=</button>
+            <button class="util" onClick = "clearDisplay()">AC</button>
+            <button class="util" onClick = "del()">DEL</button>
+            <button class="util" onClick = "appendDisplay('()')">()</button>
+            <button class="op" onClick = "appendDisplay('/')">÷</button>
+            <button class="num" onClick = "appendDisplay('7')">7</button>
+            <button class="num" onClick = "appendDisplay('8')">8</button>
+            <button class="num" onClick = "appendDisplay('9')">9</button>
+            <button class="op" onClick = "appendDisplay('*')">x</button>
+            <button class="num" onClick = "appendDisplay('4')">4</button>
+            <button class="num" onClick = "appendDisplay('5')">5</button>
+            <button class="num" onClick = "appendDisplay('6')">6</button>
+            <button class="op" onClick = "appendDisplay('-')">-</button>
+            <button class="num" onClick = "appendDisplay('1')">1</button>
+            <button class="num" onClick = "appendDisplay('2')">2</button>
+            <button class="num" onClick = "appendDisplay('3')">3</button>
+            <button class="op" onClick = "appendDisplay('+')">+</button>
+            <button class="num" onClick = "appendDisplay('%')">%</button>
+            <button class="num" onClick = "appendDisplay('0')">0</button>
+            <button class="num" onClick = "appendDisplay('.')">.</button>
+            <button class="isequal" onClick = "evaluatae()">=</button>
         </div>
     </div>
     </div>
